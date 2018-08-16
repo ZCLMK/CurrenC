@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css">
 
-  <title>Currency Converter</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Currency Converter</title>
 </head>
-  <body>
-     <div id="page-wrapper">
-      
+
+<body>
+    <div id="page-wrapper">
+
         <div id="content">
-             <header>
+            <header>
                 <h1>Currency exchange</h1>
-             </header>
-             <div id="notice"></div>
+            </header>
+            <div id="notice"></div>
             <div id="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo alias ea error suscipit cumque, 
-                enim earum eligendi ad nisi vitae, nam ratione et consectetur deleniti, animi dolore at quia inventore 
-                aliquid? Hic optio, consequuntur voluptatem dolor magnam quos repellendus? Esse ducimus reprehenderit,
-                quos doloribus distinctio odit sit corporis libero provident molestiae vitae cum dolores voluptatem 
-                obcaecati nisi est dicta earum quas animi optio? Ab maiores mollitia alias, eius eveniet tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo alias ea error suscipit cumque, enim earum eligendi ad
+                nisi vitae, nam ratione et consectetur deleniti, animi dolore at quia inventore aliquid? Hic optio, consequuntur
+                voluptatem dolor magnam quos repellendus? Esse ducimus reprehenderit, quos doloribus distinctio odit sit
+                corporis libero provident molestiae vitae cum dolores voluptatem obcaecati nisi est dicta earum quas animi
+                optio? Ab maiores mollitia alias, eius eveniet tenetur.
             </div>
 
-            <div id="converter"> 
+            <div id="converter">
                 <div id="currency-one-wrapper" class="currency-group">
-         
+
                     <label for="currency-one"> Devise de référence</label>
                     <select id='currency-one' required></select>
                     <label for="base-amount"></label>
-                    <input  id="base-amount"  type="number" value=1 step="0.001">
-            
+                    <input id="base-amount" type="number" value=1 step="0.001">
+
                 </div>
 
                 <!-- swap button -->
                 <div id="swap">
-                    <p><img id="swap-img" src="resources/img/swap.svg" alt="swap currencies"></p>
-               </div>
-    
+                    <p>
+                        <img id="swap-img" src="resources/img/swap.svg" alt="swap currencies">
+                    </p>
+                </div>
+
                 <div id="currency-two-wrapper" class="currency-group">
-          
+
                     <label for="currency-two"> Devise comparée</label>
-                    <select id='currency-two' ></select>
+                    <select id='currency-two'></select>
                     <label for="converted-amount"></label>
-                    <input  id="converted-amount"  type="number" step="0.0000001" >
+                    <input id="converted-amount" value=0 type="number" step="0.0000001">
 
                 </div>
             </div>
+        </div>
     </div>
-</div>
     <script src="JS/dropdown.js"></script>
     <script src="JS/convert.js"></script>
     <script src="JS/handleAmount.js"></script>
     <script src="JS/swap.js"></script>
-  </body>
+</body>
+
 </html>
