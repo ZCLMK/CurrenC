@@ -1,0 +1,26 @@
+{
+  "name": "currency_converter",
+  "version": "1.0.0",
+  "description": "A currency converter",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node JS/fetchCurrencies.js && sass style/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZCLMK/currency_converter.git"
+  },
+  "author": "zclmk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZCLMK/currency_converter/issues"
+  },
+  "homepage": "https://github.com/ZCLMK/currency_converter#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0",
+    "sass": "^1.10.1"
+  }
+}

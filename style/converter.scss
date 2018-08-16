@@ -1,0 +1,46 @@
+
+#converter{
+    @include flex-center(column);
+    background-color: rgb(253, 251, 251);
+    padding: 20px 0px;
+    width: 100%;
+}
+
+#currency-one-wrapper, #currency-two-wrapper{
+    @include flex-center(column, center, center);
+    width: 300px;
+}
+
+#currency-one-wrapper input, #currency-two-wrapper input{
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    font-size: 1.1em;
+}
+#currency-one-wrapper select, #currency-two-wrapper select{
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    box-decoration-break: unset;
+}
+#currency-one-wrapper label, #currency-two-wrapper label{
+    margin: 12px 0px;
+}
+#currency-one  , #currency-two {
+  height: 40px;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+#swap{
+    height: 70px;
+    width: 70px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#swap #swap-img{
+    max-width: 100%;
+}
