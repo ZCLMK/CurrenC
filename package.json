@@ -6,8 +6,14 @@
   "directories": {
     "doc": "docs"
   },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "scripts": {
-    "start": "node JS/fetchCurrencies.js && sass style/style.scss style/style.css"
+    "start": "node JS/fetchCurrencies.js && sass style/style.scss style/style.css",
+    "babelize": "babel JS --watch --out-dir es6"
   },
   "repository": {
     "type": "git",
@@ -18,9 +24,7 @@
   "bugs": {
     "url": "https://github.com/ZCLMK/currency_converter/issues"
   },
-  "homepage": "https://github.com/ZCLMK/currency_converter#readme",
-  "dependencies": {
-    "node-fetch": "^2.2.0",
-    "sass": "^1.10.1"
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

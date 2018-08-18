@@ -1,4 +1,7 @@
 Problème de swap: 
 
+
+Marche dans un seul sens. 
+
 Faire le changement une seule fois avec fonction swap.
 La deuxième fois, refaire l'appel à l'API.
