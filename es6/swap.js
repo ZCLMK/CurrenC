@@ -3,10 +3,11 @@ const curOne = document.querySelector('#currency-one');
 const curTwo = document.querySelector('#currency-two');
 const baseAmount = document.getElementById('base-amount');
 const convertedAmount = document.getElementById('converted-amount');
-let currentRate = localStorage.getItem('currentRate');
 
 function swap() {
     // only if different currencies selected
+  let currentRate = localStorage.getItem("currentRate");
+  console.log("old rate = " + currentRate);
   
     if (curOne.value != curTwo.value) {
         //-------------------------------------swapping options------------------------------------------

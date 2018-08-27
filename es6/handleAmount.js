@@ -14,8 +14,7 @@ const handleAmount = (function(e) {
                 convertedAmount.value = (Number(baseAmount.value) * ratio).toFixed(2);
             }
         }else{
-            console.log("pas d'event!!");
-            
+            console.log("pas d'event!!");        
             convertedAmount.value = (Number(baseAmount.value) * ratio).toFixed(2);
         }
     }
